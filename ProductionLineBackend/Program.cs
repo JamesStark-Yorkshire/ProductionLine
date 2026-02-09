@@ -9,7 +9,7 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
-app.MapHub<DashboardHub>("/ws");
+app.MapHub<DashboardHub>("/dashboard");
 
 Worker.Init();
 Worker.ChangeMachineStates();
